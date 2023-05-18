@@ -1,0 +1,18 @@
+[versions]
+coroutines = "1.7.1"
+flyway = "9.8.1"
+jooq = "3.18.4"
+jooq-plugin = "8.2"
+r2dbc-postgresql = "1.0.1.RELEASE"
+postgresql = "42.6.0"
+
+[libraries]
+coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+flyway-core = { group = "org.flywaydb", name = "flyway-core", version.ref = "flyway" }
+jooq = { group = "org.jooq", name = "jooq", version.ref = "jooq" }
+r2dbc-postgresql = { group = "org.postgresql", name = "r2dbc-postgresql", version.ref = "r2dbc-postgresql" }
+postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql" }
+
+[plugins]
+flyway = { id = "org.flywaydb.flyway", version.ref = "flyway" }
+jooq = { id = "nu.studer.jooq", version.ref = "jooq-plugin" }
