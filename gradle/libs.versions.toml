@@ -1,17 +1,27 @@
 [versions]
+arrow-kt = "1.2.0-RC"
 coroutines = "1.7.1"
 flyway = "9.8.1"
+hikaricp = "5.0.1"
 jooq = "3.18.4"
 jooq-plugin = "8.2"
-r2dbc-postgresql = "1.0.1.RELEASE"
 postgresql = "42.6.0"
+r2dbc-postgresql = "0.8.13.RELEASE"
+r2dbc-pool = "1.0.0.RELEASE"
+kotlin-faker = "1.14.0"
 
 [libraries]
+arrow-kt-core = { group = "io.arrow-kt", name = "arrow-core", version.ref = "arrow-kt" }
 coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
 flyway-core = { group = "org.flywaydb", name = "flyway-core", version.ref = "flyway" }
+hikaricp = { group = "com.zaxxer", name = "HikariCP", version.ref = "hikaricp" }
 jooq = { group = "org.jooq", name = "jooq", version.ref = "jooq" }
-r2dbc-postgresql = { group = "org.postgresql", name = "r2dbc-postgresql", version.ref = "r2dbc-postgresql" }
+jooq-kotlin = { group = "org.jooq", name = "jooq-kotlin", version.ref = "jooq" }
+jooq-kotlin-coroutines = { group = "org.jooq", name = "jooq-kotlin-coroutines", version.ref = "jooq" }
+r2dbc-postgresql = { group = "io.r2dbc", name = "r2dbc-postgresql", version.ref = "r2dbc-postgresql" }
+r2dbc-pool = { group = "io.r2dbc", name = "r2dbc-pool", version.ref = "r2dbc-pool" }
 postgresql = { group = "org.postgresql", name = "postgresql", version.ref = "postgresql" }
+faker = { group = "io.github.serpro69", name = "kotlin-faker", version.ref = "kotlin-faker" }
 
 [plugins]
 flyway = { id = "org.flywaydb.flyway", version.ref = "flyway" }
